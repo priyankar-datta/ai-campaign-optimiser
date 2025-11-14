@@ -1,0 +1,25 @@
+{
+  "ad_short_social": {
+    "description": "Short social media ad (headline + description + CTA).",
+    "template": "You are an expert ad copywriter. Given product: {product}, audience: {audience}, objective: {objective}, tone: {tone}, generate 6 JSON ad variants. Each variant: headline (<=30 chars), description (<=90 chars), call_to_action (Buy|Learn More|Sign Up). Return valid JSON array.",
+    "few_shots": [
+      {
+        "product": "EcoBottle",
+        "audience": "Young professionals 22-35, eco-conscious",
+        "objective": "purchase",
+        "tone": "playful",
+        "examples": [
+          {
+            "headline": "Sip Smart",
+            "description": "Reusable bottle keeps drinks cold for 24h. Grab yours!",
+            "cta": "Buy"
+          }
+        ]
+      }
+    ]
+  },
+  "ad_search_text": {
+    "description": "Search ad (short headline, description).",
+    "template": "You are an expert PPC copywriter. Given keyword: {keyword}, produce 3 ad titles and 3 descriptions optimized for intent {intent}. Return JSON."
+  }
+}
